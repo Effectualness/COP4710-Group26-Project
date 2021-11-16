@@ -1,1 +1,1 @@
-<?php header("Location: ./src/pages/login.php"); ?>
+<?php header("Location: ./src/pages/login.php"); ?> 
