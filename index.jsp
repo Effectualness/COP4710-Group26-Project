@@ -46,4 +46,4 @@
         value="${locales.selectedLocale}"/>
     <b>Date: </b>${date.date}</c:if>
 </body>
-</html>
+</html> 
