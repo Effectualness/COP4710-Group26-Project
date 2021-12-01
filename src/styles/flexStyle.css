@@ -8,6 +8,7 @@ body{
     height: 100%;
     width: 100%;
     flex-direction: column;
+    
 }
 .header{
     display: flex;
@@ -17,12 +18,10 @@ body{
     background-color: blue;
     border-bottom: 1px solid black;
 }
-.body{
+.main{
     display: flex;
     flex: 19;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: teal;
 }
 .roundedBox{
@@ -31,7 +30,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: whitesmoke;
-    height: 40%;
+    height: 50%;
     width: 15%;
     border-radius: 5px;
 }
