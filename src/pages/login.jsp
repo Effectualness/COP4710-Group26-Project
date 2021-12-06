@@ -1,4 +1,6 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -14,7 +16,7 @@
             <div class="roundedBox">
                 <h2>Login</h2>
                 <p>Please fill in your credentials to login.</p>
-                <form action="./forms.jsp">
+                <form action="/virtual-directory/servlet/loginServlet" method="post">
                     <div class="form-group">
                         <label>Email</label>
                         <input type="text" name="email" class="form-control">
@@ -31,6 +33,7 @@
                     <div class="form-group" style="display:flex; justify-content: center; padding-top: 30px">
                         <input type="submit" class="btn btn-primary" value="Login" style="width:100%">
                     </div>
+                    <br>${message}
                     <p>Don't have an account? <a href="register.jsp">Sign up now</a>.</p>
                 </form>
             </div>
