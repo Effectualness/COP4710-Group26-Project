@@ -32,24 +32,32 @@ if (mail($to, $subject, $message, $headers)) {
 </head>
 <body>
     <div className="schedulePage">
-            <h1>Schedule Email</h1>
+            <h1>Schedule Email Individual</h1>
             <div class="wrapper">
                 <input style = "height:20px;width:300px;font-size:12pt; type="text" id="emailEntry2" placeholder="email@domain.com"/>
                 
                 <input style = "height:20px;width:300px;font-size:12pt; type="text" id="emailEntry1" placeholder="Subject"/>
                 <input style="height:200px;width:300px;font-size:12pt rows="2" cols="30" placeholder="Body"></textarea>
                 <input type="date" id="scheduleDate">
-				<button style = "height:40px;width:300px;font-size:12pt; id="emailButton2" type="button" onClick={scheduleInviteEmail}>Send Reminder</button>
+				<button style = "height:40px;width:300px;font-size:12pt; id="emailButton2" type="button" onClick={sendReminderEmail.php}>Send Reminder</button>
             </div>
             
-            <h3>Request Book Information</h3>
+            <h1>Schedule Email Globally</h1>
+            <div class="wrapper">
+                <input style = "height:20px;width:300px;font-size:12pt; type="text" id="emailEntry1" placeholder="Subject"/>
+                <input style="height:200px;width:300px;font-size:12pt rows="2" cols="30" placeholder="Body"></textarea>
+                <input type="date" id="scheduleDate">
+				<button style = "height:40px;width:300px;font-size:12pt; id="emailButton2" type="button" onClick={sendReminderEmail.php}>Send Reminder</button>
+            </div>
+            
+            <h1>Request Book Information</h1>
             <div class="wrapper"> 
-            <input style = "height:20px;width:300px;font-size:12pt; type="text" id="emailEntry2" placeholder="email@domain.com"/>
+            <input style = "height:20px;width:300px;font-size:12pt"; type="text" id="emailEntry2" placeholder="email@domain.com"/>
             
-                <button style = "height:40px;width:300px;font-size:12pt; id="emailButton" type="button" onClick={sendEmail} >Send Request</button><br />
+                <button style = "height:40px;width:300px;font-size:12pt"; id="emailButton" type="button" onClick={sendEmail.php} >Send Request</button>
             </div>
             
-            <button type="button" onClick={doGoBack}>Return to Dashboard</button><br />
+            <button style = "height:40px;width:300px;font-size:12pt"; type="button" onClick={returnToDashboard}>Return to Dashboard</button>
         </div>
 </body>
 </html>
