@@ -5,15 +5,11 @@ header("Access-Control-Allow-Origin: *");
 
 include "database.php";
 
-$inputData = json_decode(file_get_contents('php://input'), true);
+// Include config file
+require_once "../../config.php";
 
-$username = $inputData["username"];
-$password = $inputData["password"];
-
-$connection = mysqli_connect($host, $username, $password, $dbname);
-if ($connection->connect_error) {
-    die("Connection terminated." . $conn->connect_error);
-}
+$username = $confirmUsername;
+$password = $confirmPassword;
 
 $checkSql = "SELECT * FROM employee WHERE username=" . $username . " AND password=" . $password . ";";
 $insertSql = "INSERT INTO Employee (username, password, isAdmin) VALUES ('$username', '$password', 1)";
@@ -26,4 +22,4 @@ if ($checkResult->num_rows > 0) {
     echo('{"status":"success"}');
 }
 
-$connection->close();
+?>

@@ -2,11 +2,11 @@
 header("Access-Control-Allow-Headers: Content-type");
 header("Access-Control-Allow-Origin: *");
 
-$input = json_decode(file_get_contents('TODO'), true);
+$inputData = json_decode(file_get_contents('php://input'), true);
 
-$recipient = $input["recipients"];
-$subject = $input["subject"];
-$body = $input["body"];
+$recipient = $inputData["recipients"];
+$subject = $inputData["subject"];
+$body = $inputData["body"];
 
 $headers = "From: group26cop4710bookorders@gmail.com". "\r\n" . "Reply-To: group26cop4710bookorders@gmail.com" . "\r\n";
 		   
