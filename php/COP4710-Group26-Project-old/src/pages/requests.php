@@ -41,7 +41,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><a href="order.php"><embed src="../images/trash.png" style="height: 30px; width: 30px"></a></td>
+                    <td><a href="requests.php"><embed src="../images/trash.png" style="height: 30px; width: 30px"></a></td>
                 </tr>
             </table>
             <a href="finalList.php">
