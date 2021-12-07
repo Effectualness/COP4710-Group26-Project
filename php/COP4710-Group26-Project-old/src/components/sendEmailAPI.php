@@ -8,7 +8,7 @@ $recipient = $input["recipients"];
 $subject = $input["subject"];
 $body = $input["body"];
 
-$headers = "From: group26bookorders@gmail.com". "\r\n" . "Reply-To: group26bookorders@gmail.com" . "\r\n";
+$headers = "From: group26cop4710bookorders@gmail.com". "\r\n" . "Reply-To: group26cop4710bookorders@gmail.com" . "\r\n";
 		   
 $headers  = "MIME-Version: 1.0" . "\r\n";
 $headers = "Content-type: text/html; charset=iso-8859-1" . "\r\n";
