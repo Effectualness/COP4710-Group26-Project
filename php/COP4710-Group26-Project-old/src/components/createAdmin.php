@@ -22,5 +22,4 @@ if ($checkResult->num_rows > 0) {
     echo('{"status":"success"}');
 }
 
-$connection->close();
 ?>
