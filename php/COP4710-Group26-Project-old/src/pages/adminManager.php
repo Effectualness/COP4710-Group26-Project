@@ -17,10 +17,10 @@
             <h1>Admin Manager</h1>
         </div>
         <div class="main" >
-            <a href="adminManager.php">
+            <a href="createAdmin.php">
                 <embed src="../components/button.php"/>
             </a>
-            <a href="adminManager.php">
+            <a href="deleteAdmin.php">
                 <embed src="../components/button.php"/>
             </a>
         </div>
